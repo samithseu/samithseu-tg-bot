@@ -1,5 +1,7 @@
 # Telegram Bot
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/94b36b26-5547-4972-8999-6312ef2ca45c/deploy-status)](https://app.netlify.com/sites/samith-tg-bot/deploys)
+
 > [!IMPORTANT]
 > To use the bot, keep this URL <https://samithseu-bot-server.netlify.app> running!
 
