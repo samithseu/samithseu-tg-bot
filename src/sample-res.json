@@ -1,0 +1,23 @@
+{
+  "object": "chat.completion",
+  "id": "",
+  "created": 1731733810,
+  "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "system_fingerprint": "2.4.0-sha-0a655a0",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The capital city of France is Paris."
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 37,
+    "completion_tokens": 9,
+    "total_tokens": 46
+  }
+}
