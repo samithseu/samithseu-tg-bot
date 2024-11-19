@@ -7,14 +7,16 @@
 
 A simple telegram bot created just for learning to use API. It can:
 
-- Start using bot `/start`
-- Get Telegram account info `/me/`
-- Generate quote `/quote`
-- Generate surprise quote `surprise_quote`
-- Generate meme `/meme`
-- Generate joke `/joke`
-- Summarize long text `/summarize ...`
-- Answer questions provided by AI `/ask anything...` <i>AI Model: </i><a href="https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct" target="_blank">Qwen/Qwen2.5-Coder-32B-Instruct</a>
+| Command | Description |
+| --- | --- |
+| /start | Start using bot! |
+| /me | Get Telegram account info |
+| /quote | Generate quote |
+| /surprise_quote | Generate surprise quote |
+| /meme | Generate random meme |
+| /joke | Generate random joke |
+| /summarize | summarize long text... |
+| /ask | Ask anything to AI |
 
 ---
 
