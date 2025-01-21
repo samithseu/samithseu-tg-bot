@@ -117,21 +117,17 @@ export const handleAsking = async (ctx, token) => {
       await ctx.reply("Example: <code>/ask What's AI?</code>", {
         parse_mode: "HTML",
       });
+      return;
     }
     await ctx.replyWithChatAction("typing");
     const query = ctx.message.text.slice("/ask ".length);
     const url =
-      "https://api-inference.huggingface.co/models/Qwen/Qwen2.5-Coder-32B-Instruct/v1/chat/completions";
+      "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1/v1/chat/completions";
     const bodyData = {
-      messages: [
-        {
-          role: "system",
-          content:
-            "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
-        },
-        { role: "user", content: query },
-      ],
-      max_tokens: 1024,
+      model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      messages: [{ role: "user", content: query }],
+      max_tokens: 512,
+      stream: false,
     };
 
     const res = await fetch(url, {
@@ -158,6 +154,7 @@ export const handleSummarize = async (ctx, token) => {
       await ctx.reply("Example: <code>/summarize Any long text...</code>", {
         parse_mode: "HTML",
       });
+      return;
     }
     await ctx.replyWithChatAction("typing");
     const query = ctx.message.text.slice("/summarize ".length);
