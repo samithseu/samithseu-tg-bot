@@ -11,12 +11,12 @@ A simple telegram bot created just for learning to use API. It can:
 | --- | --- |
 | /start | Start using bot! |
 | /me | Get Telegram account info |
-| /quote | Generate quote |
-| /surprise_quote | Generate surprise quote |
-| /meme | Generate random meme |
-| /joke | Generate random joke |
+| /quote | fetch from a quote API |
+| /surprise_quote | fetch a surprise quote |
+| /meme | fetch a random meme |
+| /joke | fetch a random joke |
 | /summarize | summarize long text... |
-| /ask | Ask anything to AI |
+| /ask | Ask anything to AI (Free Mixtral AI API) |
 
 ---
 
